@@ -38,10 +38,10 @@ namespace Viewer.Forms
 
             // 샘플 모델 로딩
             //string filename = CFileSystem.Inst.AppPath + Path.DirectorySeparatorChar + "Sample\\scent_stand2.fbx";
-            //string filename = "C:\\sample\\cube_edge.FBX";
+            string filename = Environment .CurrentDirectory + "\\Sample\\abyyss.fbx";
             //string filename = "C:\\sample\\scent_stand1.FBX";
-            //mImportModel = new CModel();
-            //mImportModel.Init(filename);
+            mImportModel = new CModel();
+            mImportModel.Init(filename);
         }
 
         public void Progress()
